@@ -187,7 +187,7 @@ a {
     padding: 10px;
     
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
 }
 
 .projects-card {
@@ -212,20 +212,18 @@ a {
 .projects-card > .project1 {
     background-color: #fff;
     font-size: 12px;
-    /* grid-column: 1 / 2;
-    grid-row: 2 / 3; */
     grid-row-start: 2;
     border-radius: 15px;
     padding-right: 20px;
 }
 
 .projects-card > [class^=project] {
+    box-sizing: border-box;
     background-color: #fff;
     font-size: 12px;
-    /* grid-column: 1 / 2;
-    grid-row: 2 / 3; */
     border-radius: 15px;
     padding-right: 20px;
+    height: 150px;
 }
 
 
@@ -247,7 +245,7 @@ a {
 
 .projects-card > [class^=project] > .description {
     box-sizing: border-box;
-    height: 100px;
+    height: 90px;
 }
 
 .projects-card > [class^=project] > .description > p {  
@@ -258,14 +256,9 @@ a {
 }
 
 .projects-card > [class^=project] > .optional-button {
-    /* box-sizing: border-box; */
-    /* position: relative; */
     float: right;
     bottom: 0;
-    /* left: 200px;
-    top: 20px; */
-    /* right: 0; */
-    /* bottom: 0; */
+
 }
 
 .projects-card > [class^=project] > .optional-button > i {
@@ -275,8 +268,110 @@ a {
 .addition {
     box-sizing: border-box;
     grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
  
+.addition > .announcements > p {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.addition > .trending > p {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.addition > .announcements {
+    box-sizing: border-box;
+    /* background-color: white; */
+    /* border-radius: 10px; */
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    padding-left: 10px;
+    grid-row: 1 / 2;
+}
+
+.addition > .announcements > .announce-display {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.addition > .announcements > .announce-display > [class^=announce] {
+    padding: 0px 10px;
+}
+
+.addition > .announcements > .announce-display > [class^=announce]> .title {
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: black;
+    font-size: 12px;
+}
+
+.addition > .announcements > .announce-display > [class^=announce]> p {
+    margin: 0px;
+    margin-left: 5px;
+    color: rgb(109, 107, 107);
+    font-size: 10px;
+}
+
+hr {
+    color: rgb(109, 107, 107);
+}
+
+.addition > .trending {
+    box-sizing: border-box;
+    /* background-color: white; */
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    padding-left: 10px;
+    grid-row: 2 / 3;
+}
+
+.addition > .trending > .trending-display {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    height: 213px;
+    padding: 5px 10px;
+}
+
+.addition > .trending > .trending-display > [class^=trending] {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.addition .name {
+    font-size: 12px;
+    margin: 0;
+}
+
+.addition p {
+    font-size: 10px;
+    margin: 0;
+}
+
+.trending .trend-profile {
+    margin-top: 10px;
+}
+
+.trending .avatar {
+    box-sizing: border-box;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
 
 /* @media only screen and (min-width: 769px) {
 
